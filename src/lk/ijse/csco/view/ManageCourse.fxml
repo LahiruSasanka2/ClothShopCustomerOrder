@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="593.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sr.controller.ManageCourseController">
+   <children>
+      <JFXTextField fx:id="txtCID" labelFloat="true" layoutX="15.0" layoutY="54.0" prefHeight="25.0" prefWidth="214.0" promptText="CID" />
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="15.0" layoutY="97.0" prefHeight="25.0" prefWidth="286.0" promptText="Course Name" />
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="15.0" layoutY="142.0" prefHeight="25.0" prefWidth="286.0" promptText="Course Duration" />
+      <TableView fx:id="tblCourse" layoutX="15.0" layoutY="278.0" prefHeight="296.0" prefWidth="624.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="CID" />
+            <TableColumn prefWidth="114.0" text="Course Name" />
+            <TableColumn prefWidth="91.0" text="Duration" />
+            <TableColumn prefWidth="91.0" text="Course Price" />
+            <TableColumn prefWidth="105.0" text="Discount Amount" />
+            <TableColumn prefWidth="147.0" text="Course Subject" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="229.0" layoutY="52.0" onAction="#find" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: lightblue;" text="Find" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="442.0" layoutY="237.0" onAction="#remove" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: red;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="549.0" layoutY="237.0" onAction="#update" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: orange;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="-3.0" prefHeight="37.0" prefWidth="659.0" style="-fx-background-color: #1f3508;" text="Manage Course" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCoursePrice" labelFloat="true" layoutX="15.0" layoutY="184.0" prefHeight="25.0" prefWidth="134.0" promptText="Course Price" />
+      <JFXTextField fx:id="txtDiscountAmount" labelFloat="true" layoutX="166.0" layoutY="184.0" prefHeight="25.0" prefWidth="134.0" promptText="Discount Amount" />
+      <JFXTextArea fx:id="txatCourseSubject" labelFloat="true" layoutX="370.0" layoutY="53.0" prefHeight="150.0" prefWidth="268.0" promptText="Course Subject" />
+      <JFXButton layoutX="342.0" layoutY="237.0" onAction="#save" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: darkblue;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

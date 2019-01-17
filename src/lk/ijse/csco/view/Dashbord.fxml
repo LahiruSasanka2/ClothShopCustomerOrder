@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sr.controller.DashbordController">
+   <children>
+      <AnchorPane prefHeight="593.0" prefWidth="765.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="root" layoutX="114.0" prefHeight="593.0" prefWidth="653.0" style="-fx-background-color: #d9ffaa;" />
+            <AnchorPane prefHeight="593.0" prefWidth="113.0" style="-fx-background-color: #1f3508;">
+               <children>
+                  <JFXButton layoutX="5.0" layoutY="172.0" onAction="#student" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Student">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="209.0" onAction="#course" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Course">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="244.0" onAction="#registration" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Registration">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="281.0" onAction="#payment" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Payment">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="318.0" onAction="#settings" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Settings">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="353.0" onAction="#logout" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Log Out">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="5.0" layoutY="137.0" onAction="#dashbord" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d9edc0;" text="Dashbord">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
